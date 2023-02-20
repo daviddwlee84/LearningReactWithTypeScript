@@ -15,4 +15,9 @@ npm start
 
 ## 3. Typing Props
 
-Props types
+Given `props` types
+
+Type vs. Interface
+
+* Use type when building applications
+* Use interface when building libraries
