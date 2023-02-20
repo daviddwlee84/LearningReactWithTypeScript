@@ -6,8 +6,8 @@ import './App.css';
 // import { Heading } from './components/Heading';
 // import { Oscar } from './components/Oscar';
 // import { Button } from './components/Button';
-// import { Input } from './components/Input';
-import { Container } from './components/Container';
+import { Input } from './components/Input';
+// import { Container } from './components/Container';
 
 // App component
 // (type inference)
@@ -58,8 +58,11 @@ function App() {
     //   <Input value='' />
     //   <Input value='' handleChange={(event) => console.log(event)} />
     // </div>
+    // <div className='App'>
+    //   <Container styles={{ border: '1px solid black', padding: '1rem'}} />
+    // </div>
     <div className='App'>
-      <Container styles={{ border: '1px solid black', padding: '1rem' }} />
+      <Input value='' handleChange={(event) => console.log(event)} />
     </div>
   );
 }

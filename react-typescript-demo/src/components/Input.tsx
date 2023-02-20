@@ -4,6 +4,11 @@ type InputProps = {
     handleChange?: (event: React.ChangeEvent<HTMLInputElement>) => void
 }
 
+// Tip1: destructure props
+export const Input = ({ value, handleChange }: InputProps) => {
+    return <input type='text' value={value} onChange={handleChange} />
+}
+/*
 export const Input = (props: InputProps) => {
     // Pass event as a props
     // return <input type='text' value={props.value} onChange={props.handleChange} />
@@ -15,3 +20,4 @@ export const Input = (props: InputProps) => {
     return <input type='text' value={props.value} onChange={handleInputChange} />
     // return <input type='text' />
 }
+*/

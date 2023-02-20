@@ -56,3 +56,7 @@ Type vs. Interface
 * onClick: `React.MouseEvent<HTMLButtonElement>`
 * onChange: `React.ChangeEvent<HTMLInputElement>`
 * CSS: `React.CSSProperties`
+
+### Tips
+
+1. Destructure props when defining the component
