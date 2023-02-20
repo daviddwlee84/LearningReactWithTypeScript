@@ -61,3 +61,4 @@ Type vs. Interface
 
 1. Destructure props when defining the component
 2. Export types (separate types in different files): `*.types.ts`
+3. Reusing types: use sub-type in multiple places (avoid duplication)

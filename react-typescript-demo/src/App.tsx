@@ -1,7 +1,7 @@
 import './App.css';
 // import { Greet } from './components/Greet'
 import { Person } from './components/Person';
-// import { PersonList } from './components/PersonList';
+import { PersonList } from './components/PersonList';
 // import { Status } from './components/Status';
 // import { Heading } from './components/Heading';
 // import { Oscar } from './components/Oscar';
@@ -16,20 +16,20 @@ function App() {
     first: 'Bruce',
     last: 'Wayne'
   }
-  // const nameList = [
-  //   {
-  //     first: 'Bruce',
-  //     last: 'Wayne'
-  //   },
-  //   {
-  //     first: 'Clark',
-  //     last: 'Kent'
-  //   },
-  //   {
-  //     first: 'Princess',
-  //     last: 'Diana'
-  //   }
-  // ]
+  const nameList = [
+    {
+      first: 'Bruce',
+      last: 'Wayne'
+    },
+    {
+      first: 'Clark',
+      last: 'Kent'
+    },
+    {
+      first: 'Princess',
+      last: 'Diana'
+    }
+  ]
   return (
     // <div className="App">
     //   <Greet name='Vishwas' messageCount={10} isLoggedIn={true} />
@@ -64,6 +64,7 @@ function App() {
     <div className='App'>
       <Person name={personName} />
       <Input value='' handleChange={(event) => console.log(event)} />
+      <PersonList names={nameList} />
     </div>
   );
 }
