@@ -50,3 +50,9 @@ Type vs. Interface
   * `(event: React.MouseEvent<HTMLButtonElement>, id: number) => void`: (pass more variables)
     * `<button onClick={(event) => props.handleClick(event, 87)}>Click</button>`
     * `<Button handleClick={(event, id) => { console.log('Button clicked', id, event) }} />`
+
+### HTML/CSS Props
+
+* onClick: `React.MouseEvent<HTMLButtonElement>`
+* onChange: `React.ChangeEvent<HTMLInputElement>`
+* CSS: `React.CSSProperties`
