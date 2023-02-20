@@ -1,7 +1,8 @@
 import './App.css';
-import { Greet } from './components/Greet'
-import { Person } from './components/Person';
-import { PersonList } from './components/PersonList';
+// import { Greet } from './components/Greet'
+// import { Person } from './components/Person';
+// import { PersonList } from './components/PersonList';
+import { Status } from './components/Status';
 
 // App component
 // (type inference)
@@ -25,10 +26,13 @@ function App() {
     }
   ]
   return (
-    <div className="App">
-      <Greet name='Vishwas' messageCount={10} isLoggedIn={true} />
-      <Person name={personName} />
-      <PersonList names={nameList} />
+    // <div className="App">
+    //   <Greet name='Vishwas' messageCount={10} isLoggedIn={true} />
+    //   <Person name={personName} />
+    //   <PersonList names={nameList} />
+    // </div>
+    <div className='App'>
+      <Status status='loading' />
     </div>
   );
 }
