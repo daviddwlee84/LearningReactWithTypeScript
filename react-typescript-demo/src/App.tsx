@@ -32,7 +32,7 @@ function App() {
     //   <PersonList names={nameList} />
     // </div>
     <div className='App'>
-      <Status status='loading' />
+      <Status status='error' />
     </div>
   );
 }

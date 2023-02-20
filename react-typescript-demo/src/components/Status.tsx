@@ -1,5 +1,7 @@
 type StatusProps = {
-    status: string
+    // Union of string literal
+    // This will give error if status is not in one of these
+    status: 'loading' | 'success' | 'error'
 }
 
 export const Status = (props: StatusProps) => {
