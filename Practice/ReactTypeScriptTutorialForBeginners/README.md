@@ -12,3 +12,7 @@ npx create-react-app react-typescript-demo --template typescript
 cd react-typescript-demo
 npm start
 ```
+
+## 3. Typing Props
+
+Props types
