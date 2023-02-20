@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// This is the entry point
+// Mount the component under the root DOM node
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
