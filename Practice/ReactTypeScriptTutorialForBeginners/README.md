@@ -13,7 +13,9 @@ cd react-typescript-demo
 npm start
 ```
 
-## 3. Typing Props
+## Props
+
+### What is Props and Type vs. Interface
 
 Given `props` types
 
@@ -21,3 +23,19 @@ Type vs. Interface
 
 * Use type when building applications
 * Use interface when building libraries
+
+### Data Props
+
+* `string`
+* `number`
+* `boolean`
+* object: `{}`
+* `children`
+* React Component: `React.ReactNode`
+* Optional props: `?:`
+
+> Assign default value to an object `const { parameter = 0 } = props`
+
+### Event Props
+
+* Click
