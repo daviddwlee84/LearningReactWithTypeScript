@@ -3,6 +3,7 @@ import './App.css';
 // import { Person } from './components/Person';
 // import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
+import { Heading } from './components/Heading';
 
 // App component
 // (type inference)
@@ -33,6 +34,7 @@ function App() {
     // </div>
     <div className='App'>
       <Status status='error' />
+      <Heading>Placeholder text</Heading>
     </div>
   );
 }

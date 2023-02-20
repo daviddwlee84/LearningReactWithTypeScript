@@ -1,5 +1,6 @@
 type StatusProps = {
     // Union of string literal
+    // https://stackoverflow.com/questions/61047551/typescript-union-of-string-and-string-literals
     // This will give error if status is not in one of these
     status: 'loading' | 'success' | 'error'
 }
