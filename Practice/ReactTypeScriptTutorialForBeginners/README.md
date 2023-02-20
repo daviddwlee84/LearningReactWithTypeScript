@@ -38,6 +38,15 @@ Type vs. Interface
 
 ### Event Props
 
+> Check the console.log in the browser developer tool
+
 * Click
   * `() => void`: no input event and return
+    * `<button onClick={props.handleClick}>Click</button>`
+    * `<Button handleClick={() => { console.log('Button clicked') }} />`
   * `(event: React.MouseEvent<HTMLButtonElement>) => void`: React event type
+    * `<button onClick={props.handleClick}>Click</button>`
+    * `<Button handleClick={(event) => { console.log('Button clicked', event) }} />`
+  * `(event: React.MouseEvent<HTMLButtonElement>, id: number) => void`: (pass more variables)
+    * `<button onClick={(event) => props.handleClick(event, 87)}>Click</button>`
+    * `<Button handleClick={(event, id) => { console.log('Button clicked', id, event) }} />`

@@ -43,8 +43,15 @@ function App() {
     //   <Greet name='Vishwas' isLoggedIn={true} />
     // </div>
     <div className='App'>
-      <Button handleClick={(event) => {
+      {/* <Button handleClick={() => {
+        // You will be able to see this in F12 developer tools
+        console.log('Button clicked')
+      }} /> */}
+      {/* <Button handleClick={(event) => {
         console.log('Button clicked', event)
+      }} /> */}
+      <Button handleClick={(event, id) => {
+        console.log('Button clicked', id, event)
       }} />
     </div>
   );
