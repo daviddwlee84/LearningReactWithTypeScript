@@ -39,3 +39,5 @@ Type vs. Interface
 ### Event Props
 
 * Click
+  * `() => void`: no input event and return
+  * `(event: React.MouseEvent<HTMLButtonElement>) => void`: React event type
