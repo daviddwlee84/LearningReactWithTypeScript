@@ -8,7 +8,8 @@ import './App.css';
 // import { Button } from './components/Button';
 // import { Input } from './components/Input';
 // import { Container } from './components/Container';
-import { LoggedIn } from './components/state/LoggedIn';
+// import { LoggedIn } from './components/state/LoggedIn';
+import { User } from './components/state/User';
 
 // App component
 // (type inference)
@@ -67,8 +68,11 @@ function App() {
     //   <Input value='' handleChange={(event) => console.log(event)} />
     //   <PersonList names={nameList} />
     // </div>
+    // <div className='App'>
+    //   <LoggedIn />
+    // </div>
     <div className='App'>
-      <LoggedIn />
+      <User />
     </div>
   );
 }

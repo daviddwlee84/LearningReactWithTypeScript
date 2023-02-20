@@ -68,3 +68,6 @@ Type vs. Interface
 ### useState
 
 > Login
+
+* boolean value
+* future value (null | Type)
