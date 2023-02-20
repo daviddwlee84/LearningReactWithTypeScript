@@ -1,7 +1,8 @@
 // To be an object {}
 type GreetProps = {
     name: string
-    messageCount: number
+    // Make this an optional parameter
+    messageCount?: number
     isLoggedIn: boolean
 }
 
@@ -17,12 +18,13 @@ TS7006: Parameter 'props' implicitly has an 'any' type.
     4 |             <h2>Welcome {props.name}! You have 10 unread messages</h2>
 */
 export const Greet = (props: GreetProps) => {
+    const { messageCount = 0 } = props; // give default value
     return (
         <div>
             <h2>
                 {
                     props.isLoggedIn
-                        ? `Welcome ${props.name}! You have ${props.messageCount} unread messages`
+                        ? `Welcome ${props.name}! You have ${messageCount} unread messages`
                         : 'Welcome Guest'
                 }
             </h2>
