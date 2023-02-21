@@ -13,6 +13,18 @@ cd react-typescript-demo
 npm start
 ```
 
+## TypeScript
+
+template literal
+
+* `type: string` => `type: 'increment' | 'decrement' | 'reset'`
+
+null
+
+* `*?.`
+* `*?:`
+* `(nullable_variable || default_value)`
+
 ## Props
 
 ### What is Props and Type vs. Interface
