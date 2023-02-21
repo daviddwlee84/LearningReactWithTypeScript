@@ -89,3 +89,5 @@ Type Assertion: `as` keyword
 ### useReducer
 
 `const [state, dispatch] = useReducer(reducer, initialState);`
+
+### useContext

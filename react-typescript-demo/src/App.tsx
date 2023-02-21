@@ -10,7 +10,9 @@ import './App.css';
 // import { Container } from './components/Container';
 // import { LoggedIn } from './components/state/LoggedIn';
 // import { User } from './components/state/User';
-import { Counter } from './components/state/Counter';
+// import { Counter } from './components/state/Counter';
+import { ThemeContextProvider } from './components/context/ThemeContext';
+import { Box } from './components/context/Box';
 
 // App component
 // (type inference)
@@ -77,8 +79,15 @@ function App() {
     // <div className='App'>
     //   <User />
     // </div>
+    // <div className='App'>
+    //   <Counter />
+    // </div>
+
+    // Wrap the box component
     <div className='App'>
-      <Counter />
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
     </div>
   );
 }
