@@ -91,3 +91,12 @@ Type Assertion: `as` keyword
 `const [state, dispatch] = useReducer(reducer, initialState);`
 
 ### useContext
+
+* `createContext`
+  * `*Context.tsx`
+    * `type *ContextProviderProps`
+    * `*Context = createContext(default_context)`
+    * `*ContextProvider`
+* `useContext`
+  * `import from createContext...`
+  * useContext => gain the passed provider value

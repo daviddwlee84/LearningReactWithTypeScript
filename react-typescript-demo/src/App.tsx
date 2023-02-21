@@ -11,8 +11,10 @@ import './App.css';
 // import { LoggedIn } from './components/state/LoggedIn';
 // import { User } from './components/state/User';
 // import { Counter } from './components/state/Counter';
-import { ThemeContextProvider } from './components/context/ThemeContext';
-import { Box } from './components/context/Box';
+// import { ThemeContextProvider } from './components/context/ThemeContext';
+// import { Box } from './components/context/Box';
+import { UserContextProvider } from './components/context/UserContext';
+import { User } from './components/context/User';
 
 // App component
 // (type inference)
@@ -84,10 +86,16 @@ function App() {
     // </div>
 
     // Wrap the box component
+    // <div className='App'>
+    //   <ThemeContextProvider>
+    //     <Box />
+    //   </ThemeContextProvider>
+    // </div>
+
     <div className='App'>
-      <ThemeContextProvider>
-        <Box />
-      </ThemeContextProvider>
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
     </div>
   );
 }
