@@ -71,3 +71,5 @@ Type vs. Interface
 
 * boolean value
 * future value (null | Type)
+
+Type Assertion: `as` keyword

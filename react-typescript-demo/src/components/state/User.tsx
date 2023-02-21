@@ -7,7 +7,9 @@ type AuthUser = {
 
 export const User = () => {
     // const [user, setUser] = useState(null)
-    const [user, setUser] = useState<null | AuthUser>(null)
+    // const [user, setUser] = useState<null | AuthUser>(null)
+    // Type Assertion => Let TypeScript know user will always be AuthUser and never be null
+    const [user, setUser] = useState<AuthUser>({} as AuthUser)
     /*
     Compiled with problems:X
 
@@ -35,17 +37,21 @@ export const User = () => {
             email: 'vishwas@exmple.com'
         })
     }
+    /*
     const handleLogout = () => {
         // set user to null
         setUser(null)
     }
+    */
     return (
         // Since user can be null so we use user?.*
         <div>
             <button onClick={handleLogin}>Login</button>
-            <button onClick={handleLogout}>Logout</button>
+            {/* <button onClick={handleLogout}>Logout</button>
             <div>User name is {user?.name}</div>
-            <div>User email is {user?.email}</div>
+            <div>User email is {user?.email}</div> */}
+            <div>User name is {user.name}</div>
+            <div>User email is {user.email}</div>
         </div>
     )
 }
