@@ -73,3 +73,7 @@ Type vs. Interface
 * future value (null | Type)
 
 Type Assertion: `as` keyword
+
+### useReducer
+
+`const [state, dispatch] = useReducer(reducer, initialState);`

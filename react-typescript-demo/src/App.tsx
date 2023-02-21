@@ -9,11 +9,13 @@ import './App.css';
 // import { Input } from './components/Input';
 // import { Container } from './components/Container';
 // import { LoggedIn } from './components/state/LoggedIn';
-import { User } from './components/state/User';
+// import { User } from './components/state/User';
+import { Counter } from './components/state/Counter';
 
 // App component
 // (type inference)
 function App() {
+  /*
   const personName = {
     first: 'Bruce',
     last: 'Wayne'
@@ -32,6 +34,7 @@ function App() {
       last: 'Diana'
     }
   ]
+  */
   return (
     // <div className="App">
     //   <Greet name='Vishwas' messageCount={10} isLoggedIn={true} />
@@ -71,8 +74,11 @@ function App() {
     // <div className='App'>
     //   <LoggedIn />
     // </div>
+    // <div className='App'>
+    //   <User />
+    // </div>
     <div className='App'>
-      <User />
+      <Counter />
     </div>
   );
 }
