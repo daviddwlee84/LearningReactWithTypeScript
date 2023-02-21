@@ -14,7 +14,7 @@ type UserContextType = {
     setUser: React.Dispatch<React.SetStateAction<AuthUser | null>>
 }
 
-export const UserContext = createContext<UserContextType | null>(null)
+export const UserContext = createContext<UserContextType>({} as UserContextType)
 
 export const UserContextProvider = ({ children }: UserContextProviderProps) => {
     // Authenticate state of a user (either login or logout)
